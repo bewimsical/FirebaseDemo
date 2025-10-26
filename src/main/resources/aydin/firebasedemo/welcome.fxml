@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane styleClass="root" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="aydin.firebasedemo.WelcomeController">
+    <children>
+        <VBox alignment="CENTER" prefHeight="373.0" prefWidth="530.0" spacing="20.0">
+            <padding>
+                <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+            </padding>
+            <children>
+            <Label text="Welcome" />
+                <TextField fx:id="emailTextField" prefHeight="25.0" prefWidth="356.0" promptText="email" />
+                <TextField fx:id="passwordTextField" promptText="password" />
+            <TextField fx:id="phoneNumberTextField" promptText="phone number" />
+                <HBox alignment="TOP_CENTER" prefHeight="55.0" prefWidth="518.0" spacing="10.0">
+                    <children>
+                        <Button fx:id="writeButton" mnemonicParsing="false" onAction="#writeButtonClicked" prefHeight="30.0" prefWidth="80.0" text="Login" />
+                        <Button fx:id="registerButton" mnemonicParsing="false" onAction="#registerButtonClicked" prefHeight="30.0" prefWidth="80.0" text="Register" />
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>

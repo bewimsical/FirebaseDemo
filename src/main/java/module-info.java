@@ -14,6 +14,6 @@ module aydin.firebasedemo {
 
 
 
-    opens aydin.firebasedemo to javafx.fxml;
+    opens aydin.firebasedemo;
     exports aydin.firebasedemo;
 }
